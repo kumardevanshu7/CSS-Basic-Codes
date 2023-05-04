@@ -1,0 +1,24 @@
+h3 {
+  color: blue;
+}
+
+/* Type Selectors */
+p {
+  color: darkmagenta;
+}
+
+/* Combined Selector */
+h4,
+h5 {
+  color: yellowgreen;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
