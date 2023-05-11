@@ -13,12 +13,64 @@ h5 {
   color: yellowgreen;
 }
 
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+/*Change list style*/
+li{
+  list-style-type:square;
+}
+
+/*using class selector*/
+.this{
+  color:orange;
+  font-weight:bold;
+}
+
+/* slecting only one class*/
+span.this{
+  color:green;
+}
+
+/*Using Psuedo Class Selector*/
+em:hover{
+  color:red;
+}
+
+li:hover{
+  color:blueviolet;
+}
+
+.hop:hover{
+  color:tomato;
+  background-color: blue;
+}
+
+.hop{
+  color:black;
+  background-color: yellow;
+  padding:5px;
+}
+
+/*ID Selector*/
+#gyu{
+  color:black;
+}
+
+/*Using Attribute Selector*/
+li[class="a"]{
+  color: chartreuse;
+  
+}
+
+/* or you can write this way */
+
+li[class]{
+  color: orange;
+}
+
+/* or you can select a Class which only have that particular name*/
+li[class~="a"]{
+  color:yellow;
+  background-color: black;
+}
 /**/
 /**/
 /**/
