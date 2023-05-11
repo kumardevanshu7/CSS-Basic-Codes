@@ -71,6 +71,10 @@ li[class~="a"]{
   color:yellow;
   background-color: black;
 }
-/**/
+
+/* Using Universal or Everything Selector : this will work until you don't use other list-style-type*/
+*{
+  list-style-type:none;
+}
 /**/
 /**/
