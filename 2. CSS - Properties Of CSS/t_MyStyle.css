@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-size:50px;
+    font-family: arial;
+    text-decoration: underline;
+}
+
+header{
+    background-color:aqua;
+    padding: 0.125px;
+}
+
+.bgm{
+    background-color:violet;
+    background-image: url(/img/crush.jpg);
+    background-repeat: no-repeat;
+    height:500px;
+    width:1691px;
+    background-size:770px;
+    background-position: center;
+}
+
+th{
+    text-decoration: underline;
+}
+
+td{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+th, td{
+    padding:70px;
+    font-size:40px;
+}
+
+table, th, td{
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+body{
+    font-family:arial;
+}

@@ -1,0 +1,89 @@
+/* This CSS is written by ChatGPT : you can attack this file in the link */
+
+/* Style the page header */
+header {
+    background-color: #00cccc;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid #333;
+  }
+  
+  /* Style the heading */
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  /* Style the background image */
+  .bgm {
+    background-color: #f2f2f2;
+    background-image: url(/img/crush.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the table headers */
+  th {
+    background-color: #333;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  /* Style the table rows */
+  td {
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  /* Style alternate rows */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the table links */
+  a {
+    color: #00cccc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the table footer */
+  tfoot {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  tfoot th {
+    padding: 10px 20px;
+    text-align: right;
+    font-weight: normal;
+  }
+  
