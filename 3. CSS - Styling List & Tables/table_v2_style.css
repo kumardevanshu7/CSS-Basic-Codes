@@ -1,0 +1,57 @@
+/* for border + padding + collapse */
+table,
+th,
+td {
+  border: 2px solid black;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* table heading font size */
+th {
+  font-size: 30px;
+}
+
+/* table data font size */
+td {
+  font-size: 17px;
+}
+
+/* other styling */
+body {
+  font-family: arial;
+}
+
+/* color the background in Table heading with id="student" */
+#student {
+  background-color: violet;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* color the background in Table heading */
+th {
+  background-color: orange;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* color the background in Table Data */
+td {
+  background-color: lightgreen;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: burlywood;
+  padding: 10px;
+  text-decoration: underline;
+}
