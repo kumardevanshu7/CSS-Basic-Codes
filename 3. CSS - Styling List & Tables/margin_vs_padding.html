@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin v/s Padding</title>
+    <style>
+      .box1,
+      .box2 {
+        height: 100px;
+        width: 400px;
+      }
+
+      /* putting margin here */
+      .box1 {
+        margin: 30px;
+        background-color: aquamarine;
+      }
+      /* putting padding here */
+      .box2 {
+        padding: 30px;
+        background-color: blueviolet;
+      }
+
+      /* Result : if you see the output then you can see background color is not showing in the margin style because margin has no color will not merge with background color but padding style will merging with background color. */
+
+      /* Remember: if you set the background color in parent element of box3 which is wrapper then it will merge with empty shell of margin. Like: */
+
+      /* now change the box1 to wrapper : wrapper is parent and box1 is child */
+      .wrapper {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eius nisi
+        dignissimos aperiam rem corporis molestiae magnam.
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eius nisi
+        dignissimos aperiam rem corporis molestiae magnam.
+      </div>
+    </div>
+  </body>
+</html>
