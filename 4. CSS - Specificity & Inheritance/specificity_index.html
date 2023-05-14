@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/specificity_style.css" />
+    <title>Specificity</title>
+
+    <style>
+      /* now first we select the one list and and after that ul id */
+      .dosa {
+        color: red;
+        font-weight: bold;
+      }
+
+      #spec li {
+        font-size: 40px;
+        color: black;
+        font-weight: normal;
+      }
+
+      /* now above you see that .dosa style is not work because of the Specificity : #spec li has the high specificity : you can hover on selector and see that */
+
+      /* now next example is Same selector + same attribute */
+      /* now i am selecting only momo for coloring */
+
+      ul#spec li#mo {
+        color: hotpink;
+        font-weight: bold;
+      }
+
+      ul#spec li#mo {
+        color: peru;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      /* now if you see that only last one is work because whatever is written later will work : because last style is overwriting the first one */
+
+      /* 02 = internal css */
+      ul#spec li#cb {
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="spec">
+      <li>Momos</li>
+      <li id="mo">Cold Drink</li>
+      <!-- now if you use external or internal or inline css with same selectot & attribute the only inline will work because in inline style has higher specificity -->
+      <li id="cb" style="color: aqua">Chole Bhature</li> <!-- 03 = inline css -->
+      <li class="dosa">Onion Masala Rawa Dosa</li>
+    </ul>
+  </body>
+</html>
