@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+    <style>
+      body {
+        color: green;
+      }
+      ul {
+        font-size: 30px;
+      }
+
+      /* 1st - Inherit : this will inherit the parent property */
+      ul .class-1 a {
+        color: inherit;
+        /* now if you see the output then you will see the color is black because parent color is also black */
+      }
+
+      /* 2nd - Initial : this will show the default value: varies on different browser */
+      ul .class-2 a {
+        color: initial;
+        /* now if you see the output then you will see the color is black because this browser has black initial value */
+      }
+
+      /* 3rd - Unset : if inheritance is yes then it will work like Inherit otherwise initial */
+      ul .class-3 a {
+        color: unset;
+        /* now if you see the output then you will see the color is green because in unset the inheritance value is yes so it will work like inherit */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <!-- default will show the default color : like link color is violet, etc. -->
+      <li>Default <a href="">Link</a> color</li>
+      <li class="class-1">Inherited <a href="">Link</a> color</li>
+      <li class="class-2">Initial <a href="">Link</a> color</li>
+      <li class="class-3">Unset <a href="">Link</a> color</li>
+    </ul>
+  </body>
+</html>
