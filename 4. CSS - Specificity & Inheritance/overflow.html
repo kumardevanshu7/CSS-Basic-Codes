@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OverFlow Property</title>
+    <style>
+      body {
+        font-size: 31px;
+      }
+
+      /* trying Overflow Properties : Also Check the output in the browser */
+
+      /* 1st - normal setting height and width */
+      #o1,
+      #o2,
+      #o3,
+      #o4 {
+        border: 4px solid black;
+        height: 53px;
+        width: 150px;
+        /* now you see that the lines overflow or go out of the box */
+      }
+
+      /* 2nd - overflow hidden property in - o1 id */
+      #o1 {
+        overflow: hidden;
+        /* you can see hidden property will hide the overflow element */
+      }
+
+      /* 3rd - overflow visible property in - o2 id */
+      #o2 {
+        overflow: visible;
+        /* this is the default value of overflow */
+      }
+
+      /* 4th - overflow scroll property in - o3 id */
+      #o3 {
+        overflow: scroll;
+        /* this is the default value of overflow */
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="o1">KumarDevanshuZainabJi</p>
+    <br />
+    <p id="o2">KumarDevanshuZainabJi</p>
+    <br />
+    <p id="o3">KumarDevanshuZainabJi</p>
+  </body>
+</html>
