@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Overflow</title>
+    <style>
+       
+       /* first we put the images in the box */
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 5px solid black;
+        margin: 20px;
+      }
+
+      /* if you comment this img selector then image will overflow : you can try it and see the output */
+      img {
+        height: 200px;
+        width: 200px;
+      }
+
+      /* now we use image object-fit properties */
+
+      /* 1st - contains : it will adjust the aspect ratio  */
+      .box img#pic1 {
+        object-fit: contain;
+      }
+
+      /* 2nd - cover : it will show the only that part which fits in the box  */
+      .box img#pic2 {
+        object-fit: cover;
+      }
+
+      /* 3rd - fill : it will try to adjust the pic in aspect ratio  */
+      .box img#pic3 {
+        object-fit: fill;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"><img src="/img/sample02.jpg" alt="Model" /></div>
+      <div class="box"><img src="/img/sample01.jpg" alt="Logo" /></div>
+      <br />
+      <div class="box">
+        <img src="/img/sample01.jpg" alt="Logo" id="pic1" />
+      </div>
+      <div class="box">
+        <img src="/img/sample01.jpg" alt="Logo" id="pic2" />
+      </div>
+      <div class="box">
+        <img src="/img/sample01.jpg" alt="Logo" id="pic3" />
+      </div>
+    </div>
+  </body>
+</html>
