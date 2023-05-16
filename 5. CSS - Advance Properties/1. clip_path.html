@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Clip-Path Tool</title>
+    <style>
+
+      /* extra decoration : doesn't related to clippath */
+      body {
+        background-color: #f2f2f2;
+      }
+
+      /* extra decoration : doesn't related to clippath */
+      .heading {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      /* extra decoration : doesn't related to clippath */
+      .header:hover {
+        background-color: antiquewhite;
+        cursor: pointer;
+        color: darkred;
+      }
+
+      /* extra decoration : doesn't related to clippath */
+      .header {
+        border: 4px solid #ccc;
+        background-color: #f0ffff;
+        margin-left: 600px;
+        margin-right: 600px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      img {
+        display: block;
+        /* we using clip-path property directly for circle the Pic - 1st Way */
+        clip-path: circle();
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="heading">Circle Profile Sample</h1>
+    </div>
+    <div class="image">
+      <img src="/img/pic01.jpg" alt="Model 01" />
+    </div>
+  </body>
+</html>
