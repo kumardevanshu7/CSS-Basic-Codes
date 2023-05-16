@@ -4,6 +4,15 @@
     <title>Using Clip-Path Tool</title>
     <style>
 
+      img {
+        display: block;
+        /* we using clip-path property directly for circle the Pic - 1st Way */
+        clip-path: circle();
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       /* extra decoration : doesn't related to clippath */
       body {
         background-color: #f2f2f2;
@@ -31,15 +40,6 @@
         margin-bottom: 40px;
         border-radius: 10px;
         margin-top: 20px;
-      }
-
-      img {
-        display: block;
-        /* we using clip-path property directly for circle the Pic - 1st Way */
-        clip-path: circle();
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto;
       }
       
     </style>
