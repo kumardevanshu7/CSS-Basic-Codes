@@ -1,0 +1,56 @@
+<!-- File Part 01 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index Example</title>
+
+    <style>
+
+      .layer1 {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        width: 500px;
+      }
+      .layer2 {
+        position: absolute;
+        top: 160px;
+        left: 160px;
+        width: 500px;
+      }
+      .layer3 {
+        position: absolute;
+        top: 240px;
+        left: 240px;
+        width: 500px;
+      }
+      .layer4 {
+        position: absolute;
+        top: 320px;
+        left: 320px;
+        width: 500px;
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    <center><h1>Pic 1 is in the Last</h1></center>
+    <div>
+      <img src="/img/zindex-01.jpg" alt="model1" class="layer1" />
+    </div>
+    <div>
+      <img src="/img/zindex-02.jpg" alt="model2" class="layer2" />
+    </div>
+    <div>
+      <img src="/img/zindex-03.jpg" alt="model3" class="layer3" />
+    </div>
+    <div>
+      <img src="/img/zindex-04.jpg" alt="model4" class="layer4" />
+    </div>
+  </body>
+</html>
