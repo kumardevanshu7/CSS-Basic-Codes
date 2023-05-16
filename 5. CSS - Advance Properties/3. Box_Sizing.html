@@ -1,0 +1,53 @@
+<!-- Understanding the Content Box and Border Box -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing - Concept</title>
+
+    <style>
+      div {
+        padding: 20px;
+        border: 8px solid red;
+        width: 160px;
+        height: 80px;
+        background-color: yellow;
+      }
+
+      .content-box {
+        box-sizing: content-box;
+      }
+      /* how content-box is calculated:  */
+      /* total width: 160px;
+        total height: 80px;
+        padding: 20px;
+        border: 8px;
+        content box width: 160 + (2 * padding) + (2 * border) = 160 + (2*20) + (2*8) => 216px
+        content box height: 80 + (2 * padding) + (2 * border) = 80 + (2*20) + (2*8) => 136px */
+
+      .border-box {
+        box-sizing: border-box;
+      }
+      /* how border-box is calculated:  */
+      /* total width: 160px;
+        total height: 80px;
+        padding: 20px;
+        border: 8px;
+        border box width: 160 - (2 * padding) - (2 * border) = 160 - (2*20) - (2*8) => 104px
+        border box height: 80 - (2 * padding) - (2 * border) = 80 - (2*20) - (2*8) => 24px */
+
+        /* Note: if you check the output then you will find that 'border box is small' and 'content box is big' - i mentioned the answer in above */
+
+        /* measured difference is for ADDITION IN CONTENT BOX & SUBTRACTION IN BORDER BOX */
+
+    </style>
+  </head>
+  <body>
+    <div class="content-box">Content Box</div>
+    <br />
+    <div class="border-box">Border Box</div>
+  </body>
+</html>
